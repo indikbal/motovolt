@@ -126,3 +126,20 @@ $(window).on("mousemove.parallax", function (event) {
     overwrite: "all",
   });
 });
+
+// Open popup shop item
+$(".quickview__icon").click(function () {
+  $(".overlay").css({
+    opacity: "1",
+    visibility: "visible",
+  });
+});
+
+// Popup close
+$("#closeIcon").click(function () {
+  $(".popup, .overlay").css({
+    opacity: "0",
+    visibility: "hidden",
+  });
+  $("body").css("overflow", "visible");
+});
