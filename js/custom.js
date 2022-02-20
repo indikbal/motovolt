@@ -52,6 +52,29 @@ $(".slider-nav").slick({
   arrows: false,
 });
 
+$(".single_product_slider_for").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  autoplay: true,
+  infinite: true,
+  fade: true,
+  asNavFor: ".single_product_slider_nav",
+  prevArrow:
+    '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
+  nextArrow:
+    '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
+});
+$(".single_product_slider_nav").slick({
+  slidesToShow: 4,
+  asNavFor: ".single_product_slider_for",
+  dots: false,
+  centerMode: false,
+  focusOnSelect: true,
+  arrows: false,
+  infinite: true,
+});
+
 $(".parts_slider").slick({
   dots: true,
   infinite: true,
@@ -78,6 +101,19 @@ $(".home_product_slider").slick({
     '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
   arrows: false,
 });
+$(".quick_view_product_slider").slick({
+  dots: true,
+  infinite: true,
+  autoplay: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+  prevArrow:
+    '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
+  nextArrow:
+    '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
+  arrows: false,
+});
 
 $(".feature_slider").slick({
   dots: false,
@@ -91,6 +127,22 @@ $(".feature_slider").slick({
   nextArrow:
     '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
   arrows: true,
+});
+
+$(".top_selling_bike_slider").slick({
+  dots: false,
+  infinite: true,
+  draggable: true,
+  speed: 300,
+  slidesToShow: 3,
+  adaptiveHeight: true,
+  prevArrow:
+    '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
+  nextArrow:
+    '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
+  arrows: true,
+  centerMode: true,
+  autoplay: true,
 });
 
 var $layer_1 = $(".brnad_name"),

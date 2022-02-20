@@ -22,6 +22,27 @@ body {
   --font-40: 40px;
   --font-big: 195px;
   --font-color: #9c9c9c;
+  --color-aqua: #82bfb9;
+  --color-red: #ff0000;
+  --color-black: #000;
+  --color-gray: #ccc;
+  --color-pink: #f407db;
+}
+
+.aqua {
+  background-color: var(--color-aqua);
+}
+.red {
+  background-color: var(--color-red);
+}
+.black {
+  background-color: var(--black);
+}
+.gray {
+  background-color: var(--color-gray);
+}
+.pink {
+  background-color: var(--color-pink);
 }
 
 /*
@@ -274,6 +295,14 @@ a:hover {
 .main_menu {
   padding: 15px 0px;
 }
+.inner_header_sec {
+  position: inherit;
+}
+.inner_header_sec .main_menu {
+  padding: 5px 0;
+  background-color: #f1f1f1;
+}
+
 .cart_menu a small {
   position: absolute;
   right: -14px;
@@ -1030,6 +1059,7 @@ section.hero_section {
 .select_color .color_aqua .button span {
   background: #82bfb9;
 }
+
 .select_color .color_aqua input:checked ~ .button span::before {
   border-color: #82bfb9;
 }
@@ -1256,8 +1286,7 @@ section.hero_section {
 /*************Shop page design*****************************/
 /******************************************/
 .inner_banner_sec2 {
-  padding: 200px 0 100px;
-  background-color: var(--theme-yellow);
+  padding: 100px 0;
 }
 .inner_banner_sec {
   padding: 150px 0px 400px 0px;
@@ -1286,10 +1315,6 @@ section.hero_section {
   border-radius: 15px;
 }
 
-.categories_body {
-  padding-bottom: 20px;
-}
-
 .filter-panel .panel-title {
   padding-bottom: 10px;
   padding-top: 10px;
@@ -1314,6 +1339,7 @@ input[type="checkbox"] {
   color: inherit;
   margin: 3px 11px;
   cursor: pointer;
+  margin-left: 0;
 }
 
 input[type="checkbox"]:before,
@@ -1360,6 +1386,10 @@ input[type="checkbox"]::after {
   font-size: 16px;
   font-weight: 600;
   color: #4f3a1f;
+}
+.checkbox label span i {
+  font-size: 12px;
+  padding-right: 3px;
 }
 
 .checkbox label {
@@ -1577,6 +1607,9 @@ section.shop_sec {
   font-size: 15px;
   font-weight: 500;
 }
+.short_by_right {
+  margin-bottom: 15px;
+}
 .add_to_car_btn {
   background-color: var(--theme-yellow);
   border-radius: 50px;
@@ -1594,6 +1627,9 @@ span.offer_item {
 }
 
 /****************/
+.newsletter_sec {
+  padding: 100px 0;
+}
 .product_name h4 {
   font-size: 20px;
   letter-spacing: 1px;
@@ -1602,10 +1638,9 @@ span.offer_item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 2px dashed #c7b39c;
+  border: 2px dashed #242424;
   padding: 35px;
   border-radius: 15px;
-  margin-bottom: 50px;
 }
 .original_price {
   text-decoration: line-through;
@@ -1635,7 +1670,7 @@ span.offer_item {
 }
 
 .newsleter_form {
-  width: 40%;
+  width: 50%;
 }
 
 .newsleter_form input {
@@ -1663,17 +1698,17 @@ span.offer_item {
   padding: 0;
   line-height: 24px;
   padding-right: 6px;
-  color: #ff7901;
+  color: var(--theme-yellow);
 }
 
 .newsleter_form button:hover {
   background-color: transparent;
-  color: #ff7901;
+  color: var(--theme-yellow);
   border-color: #e6e6e6;
 }
 
 .newsletter_title h4 {
-  color: #ff7901;
+  color: var(--theme-yellow);
   font-weight: 600;
   margin-bottom: 0px;
 }
@@ -1692,6 +1727,10 @@ span.offer_item {
 .cart_item_quan {
   width: 170px;
   margin: 0px auto;
+}
+.price_sec_single h5 {
+  font-size: 18px;
+  color: #7a7a7a;
 }
 
 .cvart_img_sec img {
@@ -1819,7 +1858,7 @@ span.offer_item {
 }
 
 .single_product:hover {
-  box-shadow: 4px 7px 24px #e8e8e8;
+  box-shadow: 7px 7px 44px #c3c3c3;
 }
 
 .quickview {
@@ -1912,13 +1951,12 @@ span.offer_item {
 }
 
 .popup-item {
-  width: 60%;
+  width: 50%;
   background-color: #ffffff;
   margin: 5rem auto;
   padding: 3px;
   border-radius: 25px;
   overflow: hidden;
-  border: 4px solid #c62128;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1986,6 +2024,208 @@ span.offer_item {
   object-fit: cover;
 }
 
+/***********************product details***********************/
+.single_product_section {
+  background-color: #fff !important;
+}
+.single_product_slider_item img,
+.single_product_slider_nav_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.single_product_slider_item {
+  height: 400px !important;
+}
+.single_product_slider_nav_item {
+  height: 80px !important;
+}
+.single_product_slider_nav_item {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin: 0px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.2;
+}
+.single_product_slider_nav_item.slick-current {
+  opacity: 1;
+}
+
+.know_your_bike .panel-group .panel-heading {
+  padding: 0;
+}
+
+.know_your_bike .panel-group .panel-heading a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  position: relative;
+}
+
+.know_your_bike .panel-group .panel-heading a:after {
+  content: "-";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 42px;
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-color: #ffff;
+  text-align: center;
+  line-height: 34px;
+}
+
+.know_your_bike .panel-group .panel-heading a.collapsed:after {
+  content: "+";
+}
+.know_your_bike .panel-title {
+  display: grid;
+  font-size: 60px;
+  font-family: var(--heading-font);
+}
+.know_your_bike .panel-title span {
+  font-family: var(--body-font);
+  font-size: 20px;
+}
+.know_your_bike .panel-heading a {
+  color: #000;
+  padding-left: 0 !important;
+}
+.know_your_bike .panel-heading {
+  position: relative;
+}
+.know_your_bike {
+  background-color: #f4f4f4;
+  padding: 10px 30px;
+}
+#collapseItemOpenOne {
+  border-top: 1px solid #fff;
+  padding-top: 30px;
+}
+.single_product_feature_sec {
+  padding-bottom: 100px;
+}
+/************************/
+.top_sellling_bike_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+}
+.color_available span {
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  margin: 0px 5px;
+}
+.top_selling_price h4 {
+  font-size: 24px;
+  font-family: var(--heading-font);
+  color: var(--theme-yellow);
+  margin-bottom: 0;
+}
+.top_selling_price span {
+  font-size: 12px;
+  color: #000;
+}
+.top_selling_bike_img img {
+  width: 100%;
+  transition: ease-in all 0.3s;
+}
+.single_top_bike {
+  transform: scale(0.7);
+  opacity: 0.3;
+  transition: ease-in all 0.3s;
+  background-color: #fff;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  margin: 30px 0;
+}
+.single_top_bike.slick-current {
+  transform: scale(1);
+  opacity: 1;
+  transition: ease-in all 0.3s;
+}
+.top_selling_bike_img {
+  height: 300px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.top_selling_bike_img span {
+  font-size: 15vh;
+  font-family: var(--body-font);
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+  opacity: 0.1;
+  top: 0px;
+  z-index: 1;
+  transform: translate(-50%, -20%);
+}
+.top_selling_bike_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.head_top_bike h4 {
+  margin-bottom: 0;
+  font-size: 30px;
+  font-family: var(--body-font);
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.head_top_bike,
+.top_sellling_bike_footer {
+  padding: 10px 30px;
+}
+.top_selling_buy_option button {
+  background-color: var(--theme-yellow);
+  font-family: var(--heading-font);
+  font-size: 20px;
+  border-radius: 50px;
+  padding: 10px 45px;
+  border: none;
+}
+.top_selling_bike_sec button.slide-arrow.prev-arrow.slick-arrow {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(10px, -50%);
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  border: 2px solid #8b8b8b;
+  background-color: transparent;
+  color: #8b8b8b;
+  cursor: pointer;
+  z-index: 999;
+}
+.top_selling_bike_sec button.slide-arrow.next-arrow.slick-arrow {
+  position: absolute;
+  right: 30%;
+  top: 50%;
+  transform: translate(-10px, -50%);
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  border: 2px solid #8b8b8b;
+  background-color: transparent;
+  color: #8b8b8b;
+  cursor: pointer;
+  z-index: 999;
+}
+.top_selling_title h4 {
+  font-size: 60px;
+  font-family: var(--heading-font);
+}
+.color_title {
+  font-style: italic;
+  margin-bottom: 5px;
+}
 /****************responsive*******************/
 
 @media (max-width: 575.98px) {
