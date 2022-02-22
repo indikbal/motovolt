@@ -1,9 +1,8 @@
 $(window).on("load", function () {
-  $(".loader").fadeOut();
+    $(".loader").fadeOut();
 });
 
 AOS.init();
-
 //
 //$('ul.navbar-nav li.dropdown').hover(function () {
 //    $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(100);
@@ -32,166 +31,150 @@ AOS.init();
 // });
 
 $(".slider-for").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  fade: true,
-  asNavFor: ".slider-nav",
-  prevArrow:
-    '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
-  nextArrow:
-    '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: ".slider-nav",
+    prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
 });
 $(".slider-nav").slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: ".slider-for",
-  dots: false,
-  centerMode: true,
-  focusOnSelect: true,
-  arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: ".slider-for",
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+    arrows: false,
 });
 
 $(".single_product_slider_for").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  autoplay: true,
-  infinite: true,
-  fade: true,
-  asNavFor: ".single_product_slider_nav",
-  prevArrow:
-    '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
-  nextArrow:
-    '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    fade: true,
+    asNavFor: ".single_product_slider_nav",
+    prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
 });
 $(".single_product_slider_nav").slick({
-  slidesToShow: 4,
-  asNavFor: ".single_product_slider_for",
-  dots: false,
-  centerMode: false,
-  focusOnSelect: true,
-  arrows: false,
-  infinite: true,
+    slidesToShow: 4,
+    asNavFor: ".single_product_slider_for",
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true,
+    arrows: false,
+    infinite: true,
 });
 
 $(".parts_slider").slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  adaptiveHeight: true,
-  prevArrow:
-    '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
-  nextArrow:
-    '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
-  arrows: true,
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
+    arrows: true,
 });
 
 $(".home_product_slider").slick({
-  dots: true,
-  infinite: true,
-  autoplay: true,
-  speed: 300,
-  slidesToShow: 1,
-  adaptiveHeight: true,
-  prevArrow:
-    '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
-  nextArrow:
-    '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
-  arrows: false,
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
+    arrows: false,
 });
 $(".quick_view_product_slider").slick({
-  dots: true,
-  infinite: true,
-  autoplay: true,
-  speed: 300,
-  slidesToShow: 1,
-  adaptiveHeight: true,
-  prevArrow:
-    '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
-  nextArrow:
-    '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
-  arrows: false,
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
+    arrows: false,
 });
 
 $(".feature_slider").slick({
-  dots: false,
-  infinite: true,
-  draggable: false,
-  speed: 300,
-  slidesToShow: 1,
-  adaptiveHeight: true,
-  prevArrow:
-    '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
-  nextArrow:
-    '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
-  arrows: true,
+    dots: false,
+    infinite: true,
+    draggable: false,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
+    arrows: true,
 });
 
 $(".top_selling_bike_slider").slick({
-  dots: false,
-  infinite: true,
-  draggable: true,
-  speed: 300,
-  slidesToShow: 3,
-  adaptiveHeight: true,
-  prevArrow:
-    '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
-  nextArrow:
-    '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
-  arrows: true,
-  centerMode: true,
-  autoplay: true,
+    dots: false,
+    infinite: true,
+    draggable: true,
+    speed: 300,
+    slidesToShow: 3,
+    adaptiveHeight: true,
+    prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-angle-left"></i></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"><i class="fa-solid fa-angle-right"></i></button>',
+    arrows: true,
+    centerMode: true,
+    autoplay: true,
 });
 
 var $layer_1 = $(".brnad_name"),
-  $layer_2 = $(".hero_cycle"),
-  $container = $(".hero_item"),
-  container_w = $container.width(),
-  container_h = $container.height();
+    $layer_2 = $(".hero_cycle"),
+    $container = $(".hero_item"),
+    container_w = $container.width(),
+    container_h = $container.height();
 
 $(window).on("mousemove.parallax", function (event) {
-  var pos_x = event.pageX,
-    pos_y = event.pageY,
-    left = 0,
-    top = 0;
+    var pos_x = event.pageX,
+        pos_y = event.pageY,
+        left = 0,
+        top = 0;
 
-  left = container_w / 2 - pos_x;
-  top = container_h / 2 - pos_y;
+    left = container_w / 2 - pos_x;
+    top = container_h / 2 - pos_y;
 
-  TweenMax.to($layer_2, 1, {
-    css: {
-      transform:
-        "translateX(" + left / 15 + "px) translateY(" + top / 10 + "px)",
-    },
-    ease: Expo.easeOut,
-    overwrite: "all",
-  });
+    TweenMax.to($layer_2, 1, {
+        css: {
+            transform: "translateX(" + left / 15 + "px) translateY(" + top / 10 + "px)",
+        },
+        ease: Expo.easeOut,
+        overwrite: "all",
+    });
 
-  TweenMax.to($layer_1, 1, {
-    css: {
-      transform:
-        "translateX(" + left / 5 + "px) translateY(" + top / 10 + "px)",
-    },
-    ease: Expo.easeOut,
-    overwrite: "all",
-  });
+    TweenMax.to($layer_1, 1, {
+        css: {
+            transform: "translateX(" + left / 5 + "px) translateY(" + top / 10 + "px)",
+        },
+        ease: Expo.easeOut,
+        overwrite: "all",
+    });
 });
 
 // Open popup shop item
 $(".quickview__icon").click(function () {
-  $(".overlay").css({
-    opacity: "1",
-    visibility: "visible",
-  });
+    $(".overlay").css({
+        opacity: "1",
+        visibility: "visible",
+    });
 });
 
 // Popup close
 $("#closeIcon").click(function () {
-  $(".popup, .overlay").css({
-    opacity: "0",
-    visibility: "hidden",
-  });
-  $("body").css("overflow", "visible");
+    $(".popup, .overlay").css({
+        opacity: "0",
+        visibility: "hidden",
+    });
+    $("body").css("overflow", "visible");
 });
